@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- Viewport para responsividade mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Meta tags essenciais para SEO -->
+  <meta name="description" content="Blog pessoal e portfólio de Jean Bertrand. Conheça minha trajetória acadêmica em Computação, experiência profissional e curiosidades.">
+  <meta name="author" content="Jean Bertrand">
+  <title>Sobre Mim | Jean Bertrand - Ciência da Computação</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+  <!-- Topo Semântico com Landmark Header -->
+  <header class="cabecalho-principal">
+    <div class="container container-header">
+      <a href="#inicio" class="logo">Jean Bertrand</a>
+      <nav aria-label="Navegação Primária">
+        <ul class="menu-navegacao">
+          <li><a href="#trajetoria">Trajetória</a></li>
+          <li><a href="#curiosidades">Curiosidades</a></li>
+          <li><a href="#artigos">Recomendações</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Container de Layout com CSS Grid -->
+  <div class="container layout-grid">
+    
+    <!-- Conteúdo Principal Único -->
+    <main id="conteudo-principal">
+      <article class="card-artigo" id="inicio">
+        <header class="header-artigo">
+          <h1>Olá, eu sou o Jean Bertrand! 👋</h1>
+          <p class="meta-info">
+            Publicado em <time datetime="2026-08-27">27 de agosto de 2026</time> • Categoria: <span>Tecnologia & Ensino</span>
+          </p>
+        </header>
+
+        <!-- Imagem com Alt descritivo e dimensões explícitas (Zero CLS e Alto LCP) -->
+        <figure class="figura-destaque">
+          <img 
+            src="https://assets.vogue.com/photos/589202367caf41c472cb6552/master/w_1920,c_limit/idris-elba.jpg" 
+            alt="Idris elba tomando uma xícara de café"
+            width="800" 
+            height="450"
+            loading="eager"
+            class="imagem-responsiva">
+          <figcaption>Espaço de desenvolvimento e produção acadêmica.</figcaption>
+        </figure>
+
+        <section id="trajetoria" class="secao-conteudo">
+          <h2>Trajetória Acadêmica e Profissional</h2>
+          <p>
+            Sou graduado em <strong>Ciência da Computação</strong>, especialista em <em>Inteligência Artificial aplicada à Indústria 4.0</em> e atualmente desenvolvo pesquisas de mestrado em Tecnologias Educacionais.
+          </p>
+          <p>
+            Atuei durante 3 anos como <strong>Analista de Sistemas</strong> e atualmente leciono no ensino superior na UFRR, ministrando disciplinas práticas de desenvolvimento web e programação.
+          </p>
+        </section>
+
+        <section id="curiosidades" class="secao-conteudo">
+          <h2>Curiosidades sobre Mim</h2>
+          <ul class="lista-curiosidades">
+            <li>🎮 <strong>Gamer:</strong> Apaixonado por jogos clássicos e lançamentos no Nintendo Switch.</li>
+            <li>🥋 <strong>Artes Marciais:</strong> Praticante de treinos para equilíbrio mental e físico.</li>
+            <li>🍥 <strong>Didática com Animes:</strong> Uso de analogias da cultura pop para simplificar conceitos de código.</li>
+            <li>🥩 <strong>Churrasco:</strong> Confraternização com a família e amigos nos fins de semana.</li>
+          </ul>
+        </section>
+
+        <!-- Botão Semântico, Focável e com Atributos ARIA -->
+        <div class="acoes-artigo">
+          <button type="button" id="btn-segredo" class="btn-destaque" aria-expanded="false" aria-controls="mensagem-secreta">
+            Descobrir frase do dia
+          </button>
+          
+          <div id="mensagem-secreta" class="mensagem-oculta" role="region" aria-live="polite" hidden>
+            <p>💡 <em>"A web foi feita para todos. HTML semântico, acessibilidade e performance não são opcionais, são a fundação."</em></p>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <!-- Barra Lateral com Conteúdo Complementar -->
+    <aside class="barra-lateral" id="artigos" aria-label="Conteúdo complementar">
+      <div class="card-sidebar">
+        <h3>Leituras Recomendadas</h3>
+        <ul class="lista-sidebar">
+          <li><a href="#">Guia Prático de HTML5 Semântico</a></li>
+          <li><a href="#">Diretrizes de Contraste e Acessibilidade (WCAG)</a></li>
+          <li><a href="#">Otimização de Core Web Vitals (LCP, CLS, INP)</a></li>
+        </ul>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- Rodapé Semântico -->
+  <footer class="rodape-principal">
+    <div class="container">
+      <p>&copy; 2026 Jean Bertrand • Construído com HTML Semântico, CSS Grid e Acessibilidade.</p>
+    </div>
+  </footer>
+
+  <!-- Script Externo com carregamento deferido -->
+  <script src="script2.js" defer></script>
+</body>
+</html>
