@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Falhas intencionais: Ausência de meta charset, viewport e description -->
+  <title>pagina</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Topo Não Semântico -->
+  <div class="topo">
+    <div class="nome-site">Meu Blog Pessoal</div>
+    <div class="links-menu">
+      <div class="link-item" onclick="alert('Indo para Início')">Início</div>
+      <div class="link-item" onclick="alert('Indo para Trajetória')">Trajetória</div>
+      <div class="link-item" onclick="alert('Indo para Curiosidades')">Curiosidades</div>
+    </div>
+  </div>
+
+  <div class="corpo-pagina">
+    <!-- Bloco de Conteúdo Principal -->
+    <div class="conteudo-principal">
+      <div class="post-perfil">
+        <div class="titulo-post">Olá, eu sou o Jean Bertrand! 👋</div>
+        <div class="subtitulo-autor">Publicado em 27/08/2026 por Jean</div>
+        
+        <div class="bloco-foto">
+          <!-- Imagem sem alt e sem width/height (Gera Layout Shift / CLS e erro de acessibilidade) -->
+          <img src="https://images.unsplash.com/photo-1534972195531-a756b1126f24?w=1600" class="foto-perfil">
+        </div>
+
+        <div class="secao-texto">
+          <div class="titulo-secao">Minha Trajetória Acadêmica e Profissional</div>
+          <div class="texto">
+            Sou graduado em Ciência da Computação, especialista em Inteligência Artificial aplicada à Indústria 4.0 e atualmente mestrando em Tecnologia Educacional. Atuei durante 3 anos como Analista de Sistemas e hoje leciono no ensino superior.
+          </div>
+        </div>
+
+        <div class="secao-texto">
+          <div class="titulo-secao">Curiosidades sobre Mim</div>
+          <div class="texto">
+            • Apaixonado por videogames retrô e modernos.<br>
+            • Praticante de artes marciais orientais.<br>
+            • Adoro usar analogias de animes para ensinar programação!<br>
+            • Não recuso um bom churrasco em família no fim de semana.
+          </div>
+        </div>
+
+        <!-- Elemento de interação inacessível (sem tag button, sem foco por teclado) -->
+        <div class="botao-interativo" id="btn-mensagem">
+          Clique para saber mais
+        </div>
+        <div id="mensagem-secreta" style="display:none; margin-top:15px; color:#aaa;">
+          "O segredo da web moderna é a constante evolução!"
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra Lateral -->
+    <div class="barra-lateral">
+      <div class="titulo-lateral">Artigos Recomendados</div>
+      <div class="item-lateral">Como organizar o CSS do seu projeto</div>
+      <div class="item-lateral">A tríade da Web: HTML, CSS e JS</div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <div class="rodape">
+    <div>Copyright 2026 - Todos os direitos reservados.</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

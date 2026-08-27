@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.topo {
+  background-color: #626C3B;
+  color: #fff;
+  padding: 15px 30px;
+}
+
+.nome-site {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.links-menu {
+  margin-top: 10px;
+}
+
+.link-item {
+  display: inline-block;
+  margin-right: 15px;
+  cursor: pointer;
+  color: #d1d8be;
+}
+
+/* Largura fixa: QUEBRA no celular gerando barra de rolagem horizontal */
+.corpo-pagina {
+  width: 1000px;
+  margin: 20px auto;
+}
+
+.conteudo-principal {
+  float: left;
+  width: 680px;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.barra-lateral {
+  float: right;
+  width: 260px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.foto-perfil {
+  width: 100%;
+  margin: 15px 0;
+}
+
+.titulo-post {
+  font-size: 26px;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Falha WCAG: Contraste insuficiente com fundo branco */
+.subtitulo-autor {
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 15px;
+}
+
+.titulo-secao {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0 10px 0;
+  color: #626C3B;
+}
+
+/* Falha WCAG: Cinza claro difícil de ler */
+.texto {
+  line-height: 1.6;
+  color: #888;
+}
+
+/* Falha WCAG: Amarelo com texto branco tem baixo contraste */
+.botao-interativo {
+  display: inline-block;
+  background-color: #E8AF3B;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.rodape {
+  clear: both;
+  background: #333;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
